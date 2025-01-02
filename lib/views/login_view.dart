@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:developer' as devtools show log;
@@ -36,6 +38,7 @@ class _LoginViewState extends State<LoginView> {
       appBar: AppBar(
         title: const Text('Login'),
         backgroundColor: const Color.fromARGB(255, 84, 164, 255),
+        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [

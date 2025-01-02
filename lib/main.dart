@@ -21,6 +21,7 @@ void main() {
         loginRoute: (context) => const LoginView(),
         registerRoute: (context) => const RegisterView(),
         notesRoute: (context) => const NotesView(),
+        verifyEmailRoute: (context) => const VerifyEmailView(),
       },
     ),
   );
@@ -72,6 +73,7 @@ class _NotesViewState extends State<NotesView> {
       appBar: AppBar(
         title: const Text('Notes'),
         backgroundColor: const Color.fromARGB(255, 84, 164, 255),
+        foregroundColor: Colors.white,
         actions: [
           PopupMenuButton<MenuAction>(
             onSelected: (value) async {
